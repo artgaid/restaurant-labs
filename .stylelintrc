@@ -1,0 +1,13 @@
+{
+	"extends": ["stylelint-config-recommended-vue/scss", "stylelint-config-clean-order"],
+	"overrides": [
+		{
+			"files": ["*.vue", "**/*.vue"],
+			"rules": {
+				"no-descending-specificity": null,
+				"font-family-no-missing-generic-family-keyword": null,
+				"@hflabs/ui-kit-vue/no-scss-variables": true
+			}
+		}
+	]
+}
