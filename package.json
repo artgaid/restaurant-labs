@@ -5,6 +5,7 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
+    "lint": "eslint .",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
@@ -17,7 +18,12 @@
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
     "@nuxt/eslint-config": "^1.7.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.3",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "prettier": "^3.6.2",
     "sass-embedded": "^1.89.2",
     "typescript": "^5.8.3"
   }
