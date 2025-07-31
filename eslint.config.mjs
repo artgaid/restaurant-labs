@@ -1,10 +1,12 @@
 // @ts-check
-import withNuxt from './.nuxt/eslint.config.mjs';
-import prettier from 'prettier';
-import eslintPluginSimpleImportSort from 'eslint-plugin-simple-import-sort';
 import { FlatCompat } from '@eslint/eslintrc';
+import js from '@eslint/js';
+import eslintPluginSimpleImportSort from 'eslint-plugin-simple-import-sort';
+import pluginVue from 'eslint-plugin-vue';
 import path from 'path';
 import { fileURLToPath } from 'url';
+
+import withNuxt from './.nuxt/eslint.config.mjs';
 
 // mimic CommonJS variables -- not needed if using CommonJS
 const __filename = fileURLToPath(import.meta.url);
@@ -12,20 +14,18 @@ const __dirname = path.dirname(__filename);
 
 const compat = new FlatCompat({
 	baseDirectory: __dirname,
+	recommendedConfig: js.configs.recommended,
 });
 
 export default withNuxt(
 	...compat.extends(
 		'eslint:recommended',
 		'plugin:@typescript-eslint/recommended',
-		'plugin:nuxt/recommended',
-		'plugin:vue/vue3-recommended',
 		'plugin:prettier/recommended',
-		'prettier',
 	),
+	...pluginVue.configs['flat/recommended'],
 	{
 		plugins: {
-			prettier: prettier,
 			'simple-import-sort': eslintPluginSimpleImportSort,
 		},
 
@@ -118,7 +118,7 @@ export default withNuxt(
 			'vue/no-empty-component-block': 'error', // запрещает пустые блоки в компонентах
 			'vue/no-useless-mustaches': 'error', // запрещает бесполезное использование двойных фигурных скобок.
 			'vue/eqeqeq': 'error', // требует использование строгого равенства (===)
-			'vue/component-tags-order': [
+			'vue/block-order': [
 				'error',
 				{
 					order: ['template', 'script', 'style'],
