@@ -22,6 +22,7 @@ export default withNuxt(
 		'eslint:recommended',
 		'plugin:@typescript-eslint/recommended',
 		'plugin:prettier/recommended',
+		'prettier',
 	),
 	...pluginVue.configs['flat/recommended'],
 	{
@@ -105,6 +106,8 @@ export default withNuxt(
 					order: ['defineProps', 'defineEmits'],
 				},
 			], // вначале должны быть описаны типы пропсов, потом -- эмитов
+			'vue/html-indent': ['error', 'tab'],
+			'vue/singleline-html-element-content-newline': 'off',
 			'vue/define-props-declaration': ['error', 'type-based'], // пропсы объявлены через defineProps<{...}>()
 			'vue/no-multiple-objects-in-class': 'error', // если класс задан объектом, то объект должен быть один
 			'vue/no-ref-object-reactivity-loss': 'warn', // если мы на грани потери реактивности рефа, то будет предупреждение
