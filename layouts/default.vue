@@ -19,35 +19,37 @@
 
 <style scoped lang="scss">
 	.layout-default {
+		display: flex;
+		flex-direction: column;
 		width: 100vw;
 		height: 100vh;
 
-		display: flex;
-		flex-direction: column;
-
 		&__header {
+			display: flex;
+
 			width: 100vw;
 			height: auto;
 			max-height: 20vh;
-			display: flex;
 
 			background-color: #9fcbd2;
 		}
 
 		&__main {
+			display: flex;
+
 			width: 100vw;
 			height: auto;
 			min-height: 70%;
-			display: flex;
 
 			background-color: #14ae80;
 		}
 
 		&__footer {
+			display: flex;
+
 			width: 100vw;
 			height: 30%;
 			max-height: 30%;
-			display: flex;
 
 			background-color: #76787c;
 		}

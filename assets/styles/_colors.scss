@@ -1,16 +1,17 @@
 /* semantic color variables for this project */
+
 /* Color, token */
 :root {
-	--color-white: rgba(255, 255, 255, 1);
-	--color-grey-lll: rgba(248, 248, 248, 1);
-	--color-grey-ll: rgba(240, 240, 240, 1);
-	--color-grey-l: rgba(225, 225, 225, 1);
-	--color-grey-d: rgba(111, 111, 111, 1);
-	--color-grey-dd: rgba(53, 54, 56, 1);
-	--color-green-lll: rgba(161, 253, 176, 1);
-	--color-green-ll: rgba(137, 237, 182, 1);
-	--color-green-l: rgba(149, 217, 191, 1);
-	--color-green: rgba(130, 204, 164, 1);
+	--color-white: rgb(255 255 255 / 100%);
+	--color-grey-lll: rgb(248 248 248 / 100%);
+	--color-grey-ll: rgb(240 240 240 / 100%);
+	--color-grey-l: rgb(225 225 225 / 100%);
+	--color-grey-d: rgb(111 111 111 / 100%);
+	--color-grey-dd: rgb(53 54 56 / 100%);
+	--color-green-lll: rgb(161 253 176 / 100%);
+	--color-green-ll: rgb(137 237 182 / 100%);
+	--color-green-l: rgb(149 217 191 / 100%);
+	--color-green: rgb(130 204 164 / 100%);
 
 	/* z-indexes */
 	--z-0: 0;
@@ -25,18 +26,15 @@
 	/* shadows and filters */
 	--box-shadow-normal: 0 4px 8px var(--color-shadow-004), 0 0 2px var(--color-shadow-006),
 		0 0 1px var(--color-shadow-004);
-
 	--box-shadow-super: 0 0 1px 0 var(--color-shadow-004), 0 0 2px 0 var(--color-shadow-006),
 		0 4px 8px 0 var(--color-shadow-004), 0 0 1px 0 var(--color-shadow-004),
 		0 0 2px 0 var(--color-shadow-006), 0 4px 8px 0 var(--color-shadow-004);
-
 	--filter-super: drop-shadow(0px 4px 8px var(--color-shadow-004))
 		drop-shadow(0px 0px 2px var(--color-shadow-006))
 		drop-shadow(0px 0px 1px var(--color-shadow-004))
 		drop-shadow(0px 4px 8px var(--color-shadow-004))
 		drop-shadow(0px 0px 2px var(--color-shadow-006))
 		drop-shadow(0px 0px 1px var(--color-shadow-004));
-
 	--accent-100: #f5fafb;
 	--accent-200: #e9f3f5;
 	--accent-300: #ddedef;
