@@ -17,6 +17,7 @@
     "@nuxtjs/stylelint-module": "^5.2.1",
     "eslint": "^9.32.0",
     "nuxt": "^3.17.5",
+    "nuxt-svgo": "^4.2.5",
     "stylelint": "^16.23.0",
     "vue": "^3.5.16",
     "vue-router": "^4.5.1"

@@ -28,10 +28,9 @@
 			display: flex;
 
 			width: 100vw;
-			height: auto;
-			max-height: 20vh;
-
-			background-color: #9fcbd2;
+			height: 100%;
+			min-height: 5%;
+			max-height: 10%;
 		}
 
 		&__main {
