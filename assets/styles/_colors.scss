@@ -1,0 +1,117 @@
+/* semantic color variables for this project */
+/* Color, token */
+:root {
+	--color-white: rgba(255, 255, 255, 1);
+	--color-grey-lll: rgba(248, 248, 248, 1);
+	--color-grey-ll: rgba(240, 240, 240, 1);
+	--color-grey-l: rgba(225, 225, 225, 1);
+	--color-grey-d: rgba(111, 111, 111, 1);
+	--color-grey-dd: rgba(53, 54, 56, 1);
+	--color-green-lll: rgba(161, 253, 176, 1);
+	--color-green-ll: rgba(137, 237, 182, 1);
+	--color-green-l: rgba(149, 217, 191, 1);
+	--color-green: rgba(130, 204, 164, 1);
+
+	/* z-indexes */
+	--z-0: 0;
+	--z-1: 1;
+	--z-2: 2;
+	--z-3: 10;
+	--z-4: 20;
+
+	/* transitions */
+	--transition-animation: all 0.3s ease;
+
+	/* shadows and filters */
+	--box-shadow-normal: 0 4px 8px var(--color-shadow-004), 0 0 2px var(--color-shadow-006),
+		0 0 1px var(--color-shadow-004);
+
+	--box-shadow-super: 0 0 1px 0 var(--color-shadow-004), 0 0 2px 0 var(--color-shadow-006),
+		0 4px 8px 0 var(--color-shadow-004), 0 0 1px 0 var(--color-shadow-004),
+		0 0 2px 0 var(--color-shadow-006), 0 4px 8px 0 var(--color-shadow-004);
+
+	--filter-super: drop-shadow(0px 4px 8px var(--color-shadow-004))
+		drop-shadow(0px 0px 2px var(--color-shadow-006))
+		drop-shadow(0px 0px 1px var(--color-shadow-004))
+		drop-shadow(0px 4px 8px var(--color-shadow-004))
+		drop-shadow(0px 0px 2px var(--color-shadow-006))
+		drop-shadow(0px 0px 1px var(--color-shadow-004));
+
+	--accent-100: #f5fafb;
+	--accent-200: #e9f3f5;
+	--accent-300: #ddedef;
+	--accent-350: #cae2e6;
+	--accent-400: #9fcbd2;
+	--accent-500: #6eb1bc;
+	--accent-600: #2b8d9c;
+	--accent-700: #0b6574;
+	--accent-800: #0a505f;
+	--accent-main: #0e7d8f;
+	--adv1-100: #f8f7ff;
+	--adv1-200: #f3f1fe;
+	--adv1-300: #e7e3fd;
+	--adv1-350: #dbd6fd;
+	--adv1-400: #cfc8fc;
+	--adv1-500: #b7acfa;
+	--adv1-600: #ab9ef9;
+	--adv1-700: #6c59e5;
+	--adv1-800: #5540e1;
+	--adv1-main: #8775f7;
+	--adv2-100: #f0f7fe;
+	--adv2-200: #e9f4fd;
+	--adv2-300: #d4e9fb;
+	--adv2-350: #bedff9;
+	--adv2-400: #9ecef6;
+	--adv2-500: #73b9f2;
+	--adv2-600: #52a9ef;
+	--adv2-700: #1c82d6;
+	--adv2-800: #136fba;
+	--adv2-main: #2793eb;
+	--caution-100: #fffcf5;
+	--caution-200: #fff7e8;
+	--caution-300: #fff3db;
+	--caution-350: #feecc7;
+	--caution-400: #fedd99;
+	--caution-500: #fdcc66;
+	--caution-600: #fcb41f;
+	--caution-700: #e39900;
+	--caution-800: #de8900;
+	--caution-main: #fcaa00;
+	--critical-100: #fdf6f6;
+	--critical-200: #fceaec;
+	--critical-300: #fadee1;
+	--critical-350: #f8d3d7;
+	--critical-400: #f4bbc1;
+	--critical-500: #e8737e;
+	--critical-600: #de3142;
+	--critical-700: #bf0b1d;
+	--critical-800: #b00b1b;
+	--critical-main: #d91528;
+	--dark-100: #f8f8f8;
+	--dark-150: #f3f3f3;
+	--dark-200: #efeff0;
+	--dark-200-opacity: #36393e14;
+	--dark-300: #e5e5e6;
+	--dark-300-opacity: #36393e21;
+	--dark-350: #c1c2c4;
+	--dark-375: #adaeb0;
+	--dark-400: #8f9092;
+	--dark-500: #76787c;
+	--dark-550: #636569;
+	--dark-600: #36393e;
+	--dark-700: #08080a;
+	--dark-800: #000;
+	--dark-w: #fff;
+	--dark-main: #1b1e24;
+	--dark-none: #fff0;
+	--success-100: #f6fcfa;
+	--success-200: #eaf8f4;
+	--success-300: #def4ed;
+	--success-350: #cbede3;
+	--success-400: #a1dfcc;
+	--success-500: #72ceb3;
+	--success-600: #30b88f;
+	--success-700: #0c946b;
+	--success-800: #01825c;
+	--success-main: #14ae80;
+}

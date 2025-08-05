@@ -1,0 +1,209 @@
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+	scroll-behavior: smooth;
+	min-height: 100vh;
+	line-height: 1.5;
+	text-rendering: optimizeSpeed;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class */
+ul[class],
+ol[class] {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+a {
+	cursor: pointer;
+	text-decoration: none;
+	background-color: transparent;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+	display: block;
+	max-width: 100%;
+}
+
+/* Указываем понятную периодичность в потоке данных у article */
+article > * + * {
+	margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+	margin: 0;
+	padding: 0;
+
+	font-family: inherit;
+	font-size: 100%;
+	line-height: 1.15;
+	letter-spacing: inherit;
+
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: transparent;
+	border-radius: 0;
+	outline: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+button,
+input {
+	overflow: visible;
+}
+
+input[type='text'],
+input[type='number'],
+input[type='email'],
+input[type='checkbox'] {
+	appearance: none;
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+	margin: 0;
+	-webkit-appearance: none;
+}
+
+input[type='number'] {
+	-moz-appearance: textfield;
+}
+
+button {
+	cursor: pointer;
+
+	text-transform: none;
+
+	appearance: none;
+	background: transparent;
+	border: 0;
+	outline: none;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner,
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
+	padding: 0;
+	border-style: none;
+}
+
+button:-moz-focusring,
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+
+[type='checkbox'],
+[type='radio'] {
+	box-sizing: border-box;
+	padding: 0;
+}
+
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
+	height: auto;
+	margin: 0;
+	-webkit-appearance: none;
+}
+
+[type='search'] {
+	-webkit-appearance: textfield;
+	outline-offset: -2px;
+}
+
+[type='search']::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+	font: inherit;
+	-webkit-appearance: button;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+	* {
+		scroll-behavior: auto !important;
+		transition-duration: 0.01ms !important;
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+	}
+}
+
+/* мои сбросы */
+* {
+	-webkit-tap-highlight-color: transparent;
+}
+
+html {
+	line-height: 1.15;
+	-webkit-text-size-adjust: 100%;
+}
+
+label {
+	cursor: inherit;
+}
+
+small {
+	font-size: 80%;
+}
+
+legend {
+	display: table;
+
+	box-sizing: border-box;
+	max-width: 100%;
+	padding: 0;
+
+	color: inherit;
+	white-space: normal;
+}
+
+details {
+	display: block;
+}
+
+summary {
+	display: list-item;
+}
+
+fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+}

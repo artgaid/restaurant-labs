@@ -1,0 +1,32 @@
+@font-face {
+	font-family: 'Akt';
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	src: local('Akt-Regular'), local('Akt-Regular'), url('Akt-Regular.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Akt';
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+	src: local('Akt-Normal'), local('Akt-Normal'), url('Akt-Normal.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Akt';
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+	src: local('Akt-Normal'), local('Akt-Normal'), url('Akt-Normal.woff2') format('woff2');
+	src: local('Akt-Medium'), local('Akt-Medium'), url('Akt-Medium.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Akt';
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+	src: local('Akt-Bold'), local('Akt-Bold'), url('Akt-Bold.woff2') format('woff2');
+}

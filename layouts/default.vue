@@ -6,9 +6,9 @@
 		<main class="layout-default__main">
 			<slot />
 		</main>
-    <footer class="layout-default__footer">
-      <TheFooter />
-    </footer>
+		<footer class="layout-default__footer">
+			<TheFooter />
+		</footer>
 	</div>
 </template>
 
@@ -18,5 +18,10 @@
 </script>
 
 <style scoped lang="scss">
-.layout-default {}
+	.layout-default {
+		width: 100vw;
+		height: 100vh;
+
+		background-color: blanchedalmond;
+	}
 </style>

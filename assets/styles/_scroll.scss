@@ -1,0 +1,39 @@
+.scroll-gutter {
+	scrollbar-gutter: stable both-edges;
+}
+
+.scroll {
+	scroll-behavior: smooth;
+	overflow: auto;
+
+	&::-webkit-scrollbar {
+		position: absolute;
+		top: 0;
+		right: 0;
+
+		width: 15px;
+		height: 15px;
+
+		background-color: transparent;
+	}
+	&::-webkit-scrollbar-button {
+		width: 0;
+		height: 0;
+	}
+	&::-webkit-scrollbar-track {
+		border: solid 5px transparent;
+		border-radius: 8px;
+		box-shadow: inset 0 0 10px 10px var(--dark-200);
+	}
+	&::-webkit-scrollbar-thumb {
+		background-color: transparent;
+		border: solid 5px transparent;
+		border-radius: 8px;
+	}
+
+	&:hover {
+		&::-webkit-scrollbar-thumb {
+			box-shadow: inset 0 0 10px 10px var(--dark-400);
+		}
+	}
+}
