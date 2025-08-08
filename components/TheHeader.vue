@@ -5,19 +5,30 @@
 			• Реферальная программа для партнёров
 		</div>
 		<div class="container header__menu-line">
-			<SvgoLogoBlack class="logo" />
+			<SvgoIconLogoBlack class="logo" />
 			<div class="menu">
-				<div>Услуги</div>
-				<div>Блог</div>
-				<div>О нас</div>
-				<div>Контакты</div>
-				<div>Отзывы</div>
-				<div>Поиск</div>
+				<NavigateButton :color="'grey'">Услуги</NavigateButton>
+				<NavigateButton :color="'grey'">Блог</NavigateButton>
+				<NavigateButton :color="'grey'">О нас</NavigateButton>
+				<NavigateButton :color="'grey'">Контакты</NavigateButton>
+				<NavigateButton :color="'grey'">Отзывы</NavigateButton>
 			</div>
-			<div class="login">Регистрация/ войти</div>
+			<div class="header__search">
+				<UIInput v-model="inputSearch" :size="'l'" :label="'Поиск'" searched />
+			</div>
+
+			<UserButton />
 		</div>
 	</div>
 </template>
+
+<script setup lang="ts">
+	import NavigateButton from '~/components/buttons/NavigateButton.vue';
+	import UserButton from '~/components/buttons/UserButton.vue';
+	import UIInput from '~/components/inputs/UI-Input.vue';
+
+	const inputSearch = ref('');
+</script>
 
 <style scoped lang="scss">
 	.header {
@@ -44,7 +55,7 @@
 
 		&__menu-line {
 			display: flex;
-			grid-gap: 5%;
+			grid-gap: 2%;
 			align-items: center;
 
 			width: 100%;
@@ -62,15 +73,23 @@
 
 			.menu {
 				display: grid;
-				grid-gap: 4%;
-				grid-template-columns: auto auto auto auto auto 1fr;
+				grid-gap: 2%;
+				grid-template-columns: repeat(5, max-content);
+				justify-content: start;
+
 				width: 100%;
+				padding-left: 2%;
 			}
 
 			.login {
 				display: flex;
 				flex-shrink: 0;
 			}
+		}
+
+		&__search {
+			width: 50%;
+			height: auto;
 		}
 	}
 </style>

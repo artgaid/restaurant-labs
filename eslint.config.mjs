@@ -97,6 +97,8 @@ export default withNuxt(
 			],
 
 			// 'vue/component-api-style': ['error', ['script-setup']], // все компоненты должны быть script setup
+			'vue/max-attributes-per-line': 'off',
+			'vue/html-self-closing': 'off',
 			'vue/component-name-in-template-casing': ['error', 'PascalCase'], // компоненты должны быть использованы в pascal case
 			'vue/custom-event-name-casing': ['error', 'camelCase'], // требует использования camelCase (начинающийся с маленькой буквы) для имен пользовательских событий в компонентах Vue
 			'vue/define-emits-declaration': ['error', 'type-based'], // эмиты объявлены через defineEmits<{...}>()

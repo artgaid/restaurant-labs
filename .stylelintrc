@@ -23,7 +23,9 @@
 				"selector-not-notation": null,
 				"declaration-block-no-redundant-longhand-properties": null,
 				"function-url-quotes": null,
-				"comment-empty-line-before": null
+				"comment-empty-line-before": null,
+				"selector-class-pattern":  [null, { "resolveNestedSelectors": true }],
+				"no-duplicate-selectors": null
 			}
 		}
 	]
