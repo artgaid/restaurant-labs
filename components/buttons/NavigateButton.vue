@@ -6,7 +6,7 @@
 
 <script lang="ts" setup>
 	const props = defineProps<{
-		color: 'grey' | 'green';
+		color: 'grey' | 'green' | 'white';
 	}>();
 </script>
 
@@ -37,6 +37,14 @@
 
 			&:hover {
 				background-color: var(--color-green-ll);
+			}
+		}
+
+		&.white {
+			color: var(--color-white);
+
+			&:hover {
+				background-color: var(--color-grey-d);
 			}
 		}
 	}

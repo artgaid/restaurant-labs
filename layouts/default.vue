@@ -6,7 +6,7 @@
 		<main class="layout-default__main">
 			<slot />
 		</main>
-		<footer class="layout-default__footer">
+		<footer class="container layout-default__footer">
 			<TheFooter />
 		</footer>
 	</div>
@@ -19,38 +19,29 @@
 
 <style scoped lang="scss">
 	.layout-default {
-		display: flex;
-		flex-direction: column;
+		display: grid;
+		grid-auto-rows: 10% 1fr 350px;
 		width: 100vw;
 		height: 100vh;
 
 		&__header {
 			display: flex;
-
-			width: 100vw;
+			width: 100%;
 			height: 100%;
-			min-height: 5%;
-			max-height: 10%;
 		}
 
 		&__main {
 			display: flex;
-
-			width: 100vw;
+			width: 100%;
 			height: auto;
-			min-height: 70%;
-
 			background-color: #14ae80;
 		}
 
 		&__footer {
 			display: flex;
-
-			width: 100vw;
-			height: 30%;
-			max-height: 30%;
-
-			background-color: #76787c;
+			width: 100%;
+			height: 100%;
+			max-height: 350px;
 		}
 	}
 </style>

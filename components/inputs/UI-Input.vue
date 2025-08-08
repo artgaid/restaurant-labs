@@ -343,10 +343,11 @@
 		&_focused {
 			&:not(.input_error) {
 				.input__wrapper {
-					border-color: var(--input-text-and-search-and-date-time-border-active);
+					border-color: currentColor;
 				}
 				.input__label {
-					color: var(--input-text-and-search-and-date-time-label-active);
+					color: currentColor;
+					opacity: 0.8;
 				}
 			}
 		}
@@ -354,10 +355,11 @@
 		&_filled {
 			&:not(.input_error) {
 				.input__wrapper {
-					border-color: var(--color-grey-dd);
+					border-color: currentColor;
 				}
 				.input__label {
-					color: var(--color-grey-dd);
+					color: currentColor;
+					opacity: 0.8;
 				}
 			}
 		}
@@ -457,19 +459,13 @@
 			height: 100%;
 			border: none;
 
-			box-shadow: inset 1px 0 0 0 var(--input-text-and-search-and-date-time-border-divider);
+			color: currentColor;
 
 			svg {
 				width: 12px;
 				height: 12px;
-				fill: var(--color-grey-dd);
+				fill: currentColor;
 				transition: var(--transition-animation);
-			}
-
-			&:hover {
-				svg {
-					fill: var(--color-grey-d);
-				}
 			}
 		}
 
@@ -482,18 +478,17 @@
 			height: 100%;
 			border: none;
 
+			color: currentColor;
+
 			svg {
-				fill: var(--color-grey-dd);
+				fill: currentColor;
 			}
 		}
 
 		&:hover:not(.disabled) {
 			&:not(.input_error) {
-				.input__wrapper {
-					border-color: var(--input-text-and-search-and-date-time-border-hover);
-				}
 				.input__label {
-					color: var(--input-text-and-search-and-date-time-label-hover);
+					color: currentColor;
 				}
 			}
 		}
