@@ -34,7 +34,6 @@
 			display: flex;
 			width: 100%;
 			height: auto;
-			background-color: #14ae80;
 		}
 
 		&__footer {

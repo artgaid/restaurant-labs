@@ -80,10 +80,10 @@
 		&__menu-line {
 			display: grid;
 			grid-gap: 4%;
-			grid-template-columns: auto 1fr 1fr;
+			grid-template-columns: auto 1fr auto;
 			align-items: center;
 			justify-content: flex-start;
-			justify-items: center;
+			justify-items: end;
 
 			width: 100%;
 			height: auto;
@@ -110,6 +110,7 @@
 
 			.input-search {
 				width: 100%;
+				max-width: 400px;
 				height: auto;
 			}
 		}
