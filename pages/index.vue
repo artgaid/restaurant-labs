@@ -2,10 +2,12 @@
 	<div class="home-page">
 		<MainBlock />
 		<OfferBlock />
+		<AboutUsBlock />
 	</div>
 </template>
 
 <script setup lang="ts">
+	import AboutUsBlock from '~/components/index-page/AboutUsBlock.vue';
 	import MainBlock from '~/components/index-page/MainBlock.vue';
 	import OfferBlock from '~/components/index-page/OfferBlock.vue';
 </script>
