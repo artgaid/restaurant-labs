@@ -14,7 +14,7 @@
 		width: 15px;
 		height: 15px;
 
-		background-color: transparent;
+		background-color: var(--color-grey-dd);
 	}
 
 	&::-webkit-scrollbar-button {
@@ -23,20 +23,20 @@
 	}
 
 	&::-webkit-scrollbar-track {
-		border: solid 5px transparent;
+		border: solid 5px var(--color-grey-dd);
 		border-radius: 8px;
-		box-shadow: inset 0 0 10px 10px var(--dark-200);
+		box-shadow: inset 0 0 10px 10px var(--color-grey-dd);
 	}
 
 	&::-webkit-scrollbar-thumb {
-		border: solid 5px transparent;
+		border: solid 5px var(--color-grey-dd);
 		border-radius: 8px;
-		background-color: transparent;
+		background-color: var(--color-white);
 	}
 
 	&:hover {
 		&::-webkit-scrollbar-thumb {
-			box-shadow: inset 0 0 10px 10px var(--dark-400);
+			box-shadow: inset 0 0 10px 10px var(--color-grey-dd);
 		}
 	}
 }

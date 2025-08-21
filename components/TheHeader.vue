@@ -1,9 +1,6 @@
 <template>
 	<div class="header">
-		<div class="header__running-line">
-			Открыли 300 ресторанов в 7 странах • Подбор шефов и управляющих • 1200+ обученных сотрудников
-			• Реферальная программа для партнёров
-		</div>
+		<RunningLine />
 		<div class="container header__menu-line">
 			<SvgoIconLogoBlack class="logo" />
 			<div class="menu">
@@ -26,6 +23,7 @@
 	import NavigateButton from '~/components/buttons/NavigateButton.vue';
 	import UserButton from '~/components/buttons/UserButton.vue';
 	import UIInput from '~/components/inputs/UI-Input.vue';
+	import RunningLine from '~/components/RunningLine.vue';
 
 	const inputSearch = ref('');
 </script>
@@ -34,24 +32,11 @@
 	.header {
 		display: flex;
 		flex-direction: column;
+
 		width: 100%;
 		height: 100%;
 
-		&__running-line {
-			display: flex;
-			align-items: center;
-			justify-content: left;
-
-			width: 100%;
-			height: 40%;
-			min-height: auto;
-			padding: 4px 2px;
-
-			font: var(--font-body-default-bold);
-			color: var(--color-green-ll);
-
-			background-color: var(--color-grey-dd);
-		}
+		background-color: var(--color-white);
 
 		&__menu-line {
 			display: flex;

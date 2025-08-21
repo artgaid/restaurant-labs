@@ -1,5 +1,5 @@
 <template>
-	<div class="layout-default">
+	<div class="layout-default scroll">
 		<header class="layout-default__header">
 			<TheHeader />
 		</header>
@@ -20,12 +20,17 @@
 <style scoped lang="scss">
 	.layout-default {
 		display: grid;
-		grid-auto-rows: 10% 1fr 350px;
+		grid-auto-rows: 10% auto 350px;
 		width: 100vw;
 		height: 100vh;
 
 		&__header {
+			position: sticky;
+			z-index: 100;
+			top: 0; /* прилипает к верхней границе окна */
+
 			display: flex;
+
 			width: 100%;
 			height: 100%;
 		}

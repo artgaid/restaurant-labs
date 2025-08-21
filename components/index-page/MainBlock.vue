@@ -24,9 +24,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="main-block__content">
-			<div>Что мы предлагаем:</div>
-		</div>
+		<div class="main-block__content"></div>
 	</div>
 </template>
 
