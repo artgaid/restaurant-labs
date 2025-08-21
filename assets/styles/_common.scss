@@ -9,12 +9,14 @@
   /* transitions */
   --transition-animation: all 0.3s ease;
 
+
   /* shadows and filters */
   --box-shadow-normal: 0 4px 8px var(--color-shadow-004), 0 0 2px var(--color-shadow-006),
   0 0 1px var(--color-shadow-004);
   --box-shadow-super: 0 0 1px 0 var(--color-shadow-004), 0 0 2px 0 var(--color-shadow-006),
   0 4px 8px 0 var(--color-shadow-004), 0 0 1px 0 var(--color-shadow-004),
   0 0 2px 0 var(--color-shadow-006), 0 4px 8px 0 var(--color-shadow-004);
+  --box-shadow-up: -5.057px 4.046px 5.866px 0 rgb(0 0 0 / 25%);
   --filter-super: drop-shadow(0px 4px 8px var(--color-shadow-004))
   drop-shadow(0px 0px 2px var(--color-shadow-006))
   drop-shadow(0px 0px 1px var(--color-shadow-004))

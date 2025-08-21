@@ -14,6 +14,7 @@
 <style lang="scss" scoped>
 	.user-button {
 		position: relative;
+		z-index: 1;
 
 		display: flex;
 		grid-gap: 12px;
@@ -39,6 +40,7 @@
 			z-index: -1;
 			inset: 0;
 
+			width: 100%;
 			border-radius: var(--br-14);
 
 			opacity: 0;

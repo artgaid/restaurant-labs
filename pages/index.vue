@@ -13,6 +13,7 @@
 <style scoped lang="scss">
 	.home-page {
 		display: flex;
+		grid-gap: 40px;
 		flex-direction: column;
 		align-items: center;
 		justify-content: flex-start;

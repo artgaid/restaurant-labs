@@ -82,8 +82,6 @@
 
 		border-radius: 50px;
 
-		box-shadow: var(--box-shadow-normal);
-
 		transition: color 0.2s ease;
 
 		&::after {
@@ -98,6 +96,7 @@
 			height: 100%;
 
 			background-color: var(--btn-bg-color-hover);
+			box-shadow: var(--box-shadow-normal);
 
 			transition: width 0.2s ease;
 		}

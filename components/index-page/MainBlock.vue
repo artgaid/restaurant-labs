@@ -41,6 +41,7 @@
 		width: 100%;
 		max-width: 1700px;
 		height: 100%;
+		min-height: 800px;
 		border-radius: 40px;
 
 		background-image: url('assets/imgs/Intersect.jpg');

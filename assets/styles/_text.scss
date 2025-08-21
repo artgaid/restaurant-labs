@@ -107,6 +107,14 @@ input {
 	&-clip {
 		text-overflow: clip;
 	}
+
+	&-green {
+		color: var(--color-green-ll);
+	}
+
+	&-white {
+		color: var(--color-white);
+	}
 }
 
 // ___ Whitespace ___
