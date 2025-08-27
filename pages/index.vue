@@ -19,7 +19,7 @@
 <style scoped lang="scss">
 	.home-page {
 		display: flex;
-		grid-gap: 40px;
+		grid-gap: 62px;
 		flex-direction: column;
 		align-items: center;
 		justify-content: flex-start;

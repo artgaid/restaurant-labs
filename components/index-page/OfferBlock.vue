@@ -1,6 +1,6 @@
 <template>
 	<div class="container offer-block">
-		<div class="offer-block__title">Что мы можем предложить</div>
+		<div class="text-block-title">Что мы можем предложить</div>
 		<div class="offer-block__wrapper">
 			<div
 				v-for="(offer, index) in offerData"
@@ -121,15 +121,6 @@
 		height: auto;
 
 		white-space: pre-wrap;
-
-		&__title {
-			width: 100%;
-			height: auto;
-
-			font-size: 32px;
-			font-weight: 700;
-			line-height: 44px;
-		}
 
 		&__wrapper {
 			display: grid;
