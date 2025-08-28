@@ -13,7 +13,7 @@
 				<UIAnimatedButton>Получить консультацию</UIAnimatedButton>
 			</div>
 			<div class="how-we-work-block__steps">
-				<OneStepLine :label="'Оставляете заявку'" :step="1" />
+				<OneStepLine :label="'Оставляете заявку'" :step="1" selected />
 				<OneStepLine :label="'Проводим аудит'" :step="2" />
 				<OneStepLine :label="'Формируем команду'" :step="3" />
 				<OneStepLine :label="'Запускаем проект'" :step="4" />
@@ -31,7 +31,8 @@
 	.how-we-work-block {
 		width: 100%;
 		height: auto;
-		min-height: 700px;
+
+		// min-height: 700px;
 
 		&__wrapper {
 			display: flex;
@@ -49,7 +50,7 @@
 
 		&__content {
 			display: flex;
-			grid-gap: 28px;
+			grid-gap: 38px;
 			flex-direction: column;
 
 			width: 40%;
@@ -57,6 +58,7 @@
 
 			button {
 				width: 60%;
+				margin-top: auto;
 			}
 		}
 
@@ -76,6 +78,8 @@
 			display: flex;
 			grid-gap: 20px;
 			flex-direction: column;
+			justify-content: space-between;
+
 			width: 60%;
 		}
 	}
