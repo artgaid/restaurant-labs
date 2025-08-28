@@ -41,7 +41,7 @@
 		} else if (props.color === 'white') {
 			return `var(--color-white)`;
 		}
-		return `var(--color-grey-dd)`;
+		return `var(--color-grey-d)`;
 	});
 
 	const btnBgColorDisabled = computed(() => `var(--color-grey-l)`);
@@ -60,7 +60,7 @@
 		} else if (props.color === 'white') {
 			return `var(--color-white)`;
 		}
-		return `var(--color-grey-dd)`;
+		return `var(--color-white)`;
 	});
 
 	const btnColorActive = computed(() => {
