@@ -1,5 +1,5 @@
 <template>
-	<div class="already-working-block container">
+	<div class="already-working-block">
 		<div class="text-block-title">С кем мы уже работаем</div>
 		<div class="already-working-block__companies">
 			<div

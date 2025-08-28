@@ -1,5 +1,5 @@
 <template>
-	<div class="container how-we-work-block">
+	<div class="how-we-work-block">
 		<div class="how-we-work-block__wrapper">
 			<div class="how-we-work-block__content">
 				<div class="how-we-work-block__title text-green">Как мы работаем</div>
@@ -31,8 +31,6 @@
 	.how-we-work-block {
 		width: 100%;
 		height: auto;
-
-		// min-height: 700px;
 
 		&__wrapper {
 			display: flex;

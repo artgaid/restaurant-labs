@@ -1,5 +1,5 @@
 <template>
-	<div class="container offer-block">
+	<div class="offer-block">
 		<div class="text-block-title">Что мы можем предложить</div>
 		<div class="offer-block__wrapper">
 			<div

@@ -1,10 +1,14 @@
 <template>
 	<div class="home-page">
 		<MainBlock />
-		<OfferBlock />
-		<AboutUsBlock />
-		<AlreadyWorkingBlock />
-		<HowWeWorkBlock />
+
+		<div class="container home-page__content">
+			<OfferBlock />
+			<AboutUsBlock />
+			<AlreadyWorkingBlock />
+			<HowWeWorkBlock />
+			<ReferralProgramBlock />
+		</div>
 	</div>
 </template>
 
@@ -14,6 +18,7 @@
 	import HowWeWorkBlock from '~/components/index-page/HowWeWorkBlock.vue';
 	import MainBlock from '~/components/index-page/MainBlock.vue';
 	import OfferBlock from '~/components/index-page/OfferBlock.vue';
+	import ReferralProgramBlock from '~/components/index-page/ReferralProgramBlock.vue';
 </script>
 
 <style scoped lang="scss">
@@ -27,5 +32,16 @@
 		width: 100%;
 		height: 100%;
 		padding: 8px;
+
+		&__content {
+			display: flex;
+			grid-gap: 62px;
+			flex-direction: column;
+			align-items: center;
+			justify-content: flex-start;
+
+			width: 100%;
+			height: 100%;
+		}
 	}
 </style>
