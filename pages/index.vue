@@ -8,6 +8,7 @@
 			<AlreadyWorkingBlock />
 			<HowWeWorkBlock />
 			<ReferralProgramBlock />
+			<InfoBlogBlock />
 		</div>
 	</div>
 </template>
@@ -16,6 +17,7 @@
 	import AboutUsBlock from '~/components/index-page/AboutUsBlock.vue';
 	import AlreadyWorkingBlock from '~/components/index-page/AlreadyWorkingBlock.vue';
 	import HowWeWorkBlock from '~/components/index-page/HowWeWorkBlock.vue';
+	import InfoBlogBlock from '~/components/index-page/InfoBlogBlock.vue';
 	import MainBlock from '~/components/index-page/MainBlock.vue';
 	import OfferBlock from '~/components/index-page/OfferBlock.vue';
 	import ReferralProgramBlock from '~/components/index-page/ReferralProgramBlock.vue';
