@@ -10,6 +10,7 @@
 			<ReferralProgramBlock />
 			<InfoBlogBlock />
 			<SubmitRequestBlock />
+			<RewiesBlock />
 		</div>
 	</div>
 </template>
@@ -23,6 +24,7 @@
 	import OfferBlock from '~/components/index-page/OfferBlock.vue';
 	import ReferralProgramBlock from '~/components/index-page/ReferralProgramBlock.vue';
 	import SubmitRequestBlock from '~/components/index-page/SubmitRequestBlock.vue';
+	import RewiesBlock from '~/components/index-page/RewiesBlock.vue';
 </script>
 
 <style scoped lang="scss">
