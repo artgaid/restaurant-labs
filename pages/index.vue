@@ -2,7 +2,7 @@
 	<div class="home-page">
 		<MainBlock />
 
-		<div class="container home-page__content">
+		<div class="home-page__content">
 			<OfferBlock />
 			<AboutUsBlock />
 			<AlreadyWorkingBlock />
@@ -24,7 +24,7 @@
 	import OfferBlock from '~/components/index-page/OfferBlock.vue';
 	import ReferralProgramBlock from '~/components/index-page/ReferralProgramBlock.vue';
 	import SubmitRequestBlock from '~/components/index-page/SubmitRequestBlock.vue';
-	import RewiesBlock from '~/components/index-page/RewiesBlock.vue';
+	import RewiesBlock from '~/components/index-page/ReviewsBlock.vue';
 </script>
 
 <style scoped lang="scss">
@@ -48,6 +48,8 @@
 
 			width: 100%;
 			height: 100%;
+
+			padding: 22px 2%;
 		}
 	}
 </style>
