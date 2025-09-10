@@ -3,7 +3,12 @@
 		<UIInput v-model="name" :label="'Имя'" />
 		<UIInput v-model="email" :label="'Email'" />
 		<UIInput v-model="phone" :label="'Телефон'" />
-		<UIInput v-model="contactMeType" :label="'Свяжитесь со мной'" />
+		<UISelector
+			v-model="contactMeType"
+			:label="'Свяжитесь со мной'"
+			:size="'l'"
+			:list="contactMeList"
+		/>
 
 		<div class="checkboxes">
 			<div>Я согласен на получение информационных и рекламных материалов</div>
@@ -20,11 +25,31 @@
 <script setup lang="ts">
 	import UIButton from '~/components/buttons/UI-Button.vue';
 	import UIInput from '~/components/inputs/UI-Input.vue';
+	import UISelector from '~/components/inputs/UI-Selector.vue';
 
 	const name = ref('');
 	const email = ref('');
 	const phone = ref('');
-	const contactMeType = ref('');
+	const contactMeType = ref<Record<string, string> | null>(null);
+
+	const contactMeList = [
+		{
+			code: 'WhatsApp',
+			label: 'WhatsApp',
+		},
+		{
+			code: 'Telegram',
+			label: 'Telegram',
+		},
+		{
+			code: 'E-mail',
+			label: 'E-mail',
+		},
+		{
+			code: 'callMe',
+			label: 'Звонок',
+		},
+	];
 </script>
 
 <style scoped lang="scss">

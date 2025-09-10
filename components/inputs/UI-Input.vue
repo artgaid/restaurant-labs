@@ -225,7 +225,7 @@
 					height: 42px;
 
 					.input__label {
-						top: 12px;
+						top: 10px;
 					}
 
 					.input__btn-search,
@@ -380,7 +380,7 @@
 
 			width: 100%;
 			height: 100%;
-			border: 1px solid;
+			border: 1.5px solid;
 			border-color: var(--input-text-and-search-and-date-time-border-default);
 			border-radius: var(--br-14);
 		}
