@@ -113,6 +113,10 @@ input {
 		text-overflow: clip;
 	}
 
+	&-black {
+		color: var(--color-grey-dd);
+	}
+
 	&-green {
 		color: var(--color-green-ll);
 	}

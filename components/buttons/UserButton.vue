@@ -24,7 +24,7 @@
 		width: auto;
 		height: 42px;
 		padding: 0 21px;
-		border: 1px solid var(--color-grey-dd);
+		border: 1.5px solid var(--color-grey-dd);
 		border-radius: var(--br-14);
 
 		font: var(--font-body-default-medium);

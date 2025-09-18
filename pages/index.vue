@@ -23,8 +23,8 @@
 	import MainBlock from '~/components/index-page/MainBlock.vue';
 	import OfferBlock from '~/components/index-page/OfferBlock.vue';
 	import ReferralProgramBlock from '~/components/index-page/ReferralProgramBlock.vue';
-	import SubmitRequestBlock from '~/components/index-page/SubmitRequestBlock.vue';
 	import RewiesBlock from '~/components/index-page/ReviewsBlock.vue';
+	import SubmitRequestBlock from '~/components/index-page/SubmitRequestBlock.vue';
 </script>
 
 <style scoped lang="scss">
@@ -48,7 +48,6 @@
 
 			width: 100%;
 			height: 100%;
-
 			padding: 22px 2%;
 		}
 	}

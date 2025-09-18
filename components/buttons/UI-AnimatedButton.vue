@@ -78,6 +78,7 @@
 
 		overflow: hidden;
 		display: flex;
+		grid-gap: 8px;
 		align-items: stretch;
 
 		border-radius: 50px;
@@ -160,7 +161,7 @@
 			}
 			&-l {
 				height: 42px;
-				padding: 4px;
+				padding: 4px 4px 4px 14px;
 
 				& > .ui-animated-button__icon {
 					width: 34px;
