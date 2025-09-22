@@ -2,9 +2,13 @@
 	<div class="header">
 		<RunningLine />
 		<div class="container header__menu-line">
-			<SvgoIconLogoBlack class="logo" />
+			<NuxtLink class="logo" to="/">
+				<SvgoIconLogoBlack />
+			</NuxtLink>
+
 			<div class="menu">
-				<NavigateButton :color="'grey'">Услуги</NavigateButton>
+				<NavigateMenu :label="'Услуги'" :list="navList" />
+
 				<NavigateButton :color="'grey'">Блог</NavigateButton>
 				<NavigateButton :color="'grey'">О нас</NavigateButton>
 				<NavigateButton :color="'grey'">Контакты</NavigateButton>
@@ -22,10 +26,26 @@
 <script setup lang="ts">
 	import NavigateButton from '~/components/buttons/NavigateButton.vue';
 	import UserButton from '~/components/buttons/UserButton.vue';
+	import NavigateMenu from '~/components/common/NavigateMenu.vue';
 	import UIInput from '~/components/inputs/UI-Input.vue';
 	import RunningLine from '~/components/RunningLine.vue';
 
 	const inputSearch = ref('');
+
+	const navList = [
+		{
+			name: 'Менеджмент и управление',
+			url: '/MgmtAndAdmin',
+		},
+		{
+			name: 'Разработка блюд и напитков',
+			url: '/',
+		},
+		{
+			name: 'Обучение сотрудников',
+			url: '/',
+		},
+	];
 </script>
 
 <style scoped lang="scss">
