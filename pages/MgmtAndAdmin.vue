@@ -54,12 +54,93 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="our-services-wrapper">
+			<OurServicesBlock
+				:title="'Наши услуги'"
+				:description="'Настраиваем управление, которое держит команду, финансы и сервис под контролем.'"
+				:data="ourServicesList"
+			/>
+		</div>
 	</div>
 </template>
 
 <script setup lang="ts">
 	import BackButton from '~/components/buttons/BackButton.vue';
 	import UIAnimatedButton from '~/components/buttons/UI-AnimatedButton.vue';
+	import type { ServiceDataType } from '~/types/OurServicesType';
+
+	const ourServicesList: ServiceDataType[] = [
+		{
+			id: '1',
+			name: 'Анализ операционной деятельности',
+			description: 'Изучим процессы, найдем узкие места, покажем, где утекают ресурсы и выручка.',
+			url: '#',
+		},
+		{
+			id: '2',
+			name: 'Финансовый аудит ресторана',
+			description:
+				'Разберем, как заведению зарабатывать больше: себестоимость, фонд оплаты труда, выручка и расходы.',
+			url: '#',
+		},
+
+		{
+			id: '3',
+			name: 'Антикризисный менеджмент',
+			description:
+				'Если бизнес «горит» — стабилизируем, пересоберём процессы и предложим план спасения.',
+			url: '#',
+		},
+
+		{
+			id: '4',
+			name: 'Построение операционной системы',
+			description: 'Стандарты, регламенты, KPI и отчётность — чтобы команда работала как часы.',
+			url: '#',
+		},
+		{
+			id: '5',
+			name: 'Анализ PnL и финансовой модели',
+			description:
+				'Детальный разбор прибыли, убытков и точек роста. Объясним сложное — простыми словами.',
+			url: '#',
+		},
+		{
+			id: '6',
+			name: 'Внедрение KPI и системы мотивации',
+			description:
+				'Показатели, по которым работает команда, и прозрачная система бонусов за результат.',
+			url: '#',
+		},
+		{
+			id: '7',
+			name: 'Временное управление (crisis team)',
+			description:
+				'Подключаемся как команда антикризисных управляющих — берём операционку в свои руки.',
+			url: '#',
+		},
+		{
+			id: '8',
+			name: 'Настройка бизнес-процессов «под ключ»',
+			description:
+				'Разберем, оптимизируем и настроим ключевые процессы: закупки, кухня, зал, бар, бухгалтерия.',
+			url: '#',
+		},
+		{
+			id: '9',
+			name: 'Систематизация работы управляющего',
+			description: 'Поможем владельцу и управляющему выйти из «текучки» и заняться ростом.',
+			url: '#',
+		},
+		{
+			id: '10',
+			name: 'Анализ клиентского пути (Customer Journey)',
+			description:
+				' Как гость проходит весь путь — от брони до расчета. Где теряются деньги и впечатления.',
+			url: '#',
+		},
+	];
 </script>
 
 <style scoped lang="scss">
@@ -149,6 +230,17 @@
 				background-position: top;
 				background-size: cover;
 			}
+		}
+
+		.our-services-wrapper {
+			display: flex;
+
+			width: 100%;
+			height: auto;
+			padding: 40px 60px;
+			border-radius: 14px;
+
+			background-color: var(--color-grey-lll);
 		}
 	}
 </style>
