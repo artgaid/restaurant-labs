@@ -62,12 +62,17 @@
 				:data="ourServicesList"
 			/>
 		</div>
+
+		<div class="experts-wrapper">
+			<ExpertsBlock :experts="MGMT_AND_ADMIN_EXPERTS" />
+		</div>
 	</div>
 </template>
 
 <script setup lang="ts">
 	import BackButton from '~/components/buttons/BackButton.vue';
 	import UIAnimatedButton from '~/components/buttons/UI-AnimatedButton.vue';
+	import { MGMT_AND_ADMIN_EXPERTS } from '~/constants/mgmt-and-admin';
 	import type { ServiceDataType } from '~/types/OurServicesType';
 
 	const ourServicesList: ServiceDataType[] = [
@@ -241,6 +246,13 @@
 			border-radius: 14px;
 
 			background-color: var(--color-grey-lll);
+		}
+
+		.experts-wrapper {
+			display: flex;
+			width: 100%;
+			height: auto;
+			padding: 40px 0;
 		}
 	}
 </style>

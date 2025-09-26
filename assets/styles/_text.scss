@@ -74,6 +74,13 @@ input {
 		line-height: 40px;
 	}
 
+	&-block-description {
+		width: 100%;
+		margin-bottom: 22px;
+		font: var(--font-body-default-medium);
+		color: var(--color-grey-d);
+	}
+
 	&-default {
 		font: var(--font-body-default);
 	}
