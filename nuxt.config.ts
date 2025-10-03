@@ -16,7 +16,7 @@ export default defineNuxtConfig({
 		},
 	},
 
-	modules: ['@nuxt/eslint', '@nuxtjs/stylelint-module', 'nuxt-svgo'],
+	modules: ['@nuxt/eslint', '@nuxtjs/stylelint-module', 'nuxt-svgo', '@nuxt/image'],
 	svgo: {
 		defaultImport: 'component',
 	},

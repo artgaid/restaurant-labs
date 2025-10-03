@@ -1,29 +1,43 @@
 <template>
-	<div class="expert-card">
-		<img class="expert-card__photo" :src="'~/assets/imgs/experts/Expert-Nazar.png'" alt="photo" />
-		<div class="expert-card__name">{{ props.expert.name }}</div>
-		<div class="expert-card__description">
+	<NuxtLink :to="pageUrl" class="expert-mini-card">
+		<div class="expert-mini-card__photo">
+			<img v-if="imgSrc && isMounted" :src="imgSrc" alt="photo" />
+		</div>
+
+		<div class="expert-mini-card__name text-bold">{{ props.expert.name }}</div>
+		<div class="expert-mini-card__description text-default">
 			{{ props.expert.description }}
 		</div>
-	</div>
+	</NuxtLink>
 </template>
 
 <script setup lang="ts">
+	import getImgSrcHelper from '~/helpers/getImgSrc.helper';
 	import type { ExpertType } from '~/types/ExpertsTypes';
 
 	const props = defineProps<{
 		expert: ExpertType;
 	}>();
 
-	// const bgImg = computed(() => props.expert.photoUrl);
-	// const bgImg = computed(() => ({ backgroundImage: `url(${props.expert.photoUrl})` }));
-	// const bgImg = computed(() => ({
-	// 	backgroundImage: "url('assets/imgs/experts/Expert-Nazar.png')",
-	// }));
+	const pageUrl = computed(() => `/experts/${props.expert.id}`);
+
+	const imgSrc = computed(() => getImgSrcHelper(props.expert.photo, 'experts') ?? null);
+
+	const isMounted = ref(false);
+	onMounted(() => {
+		isMounted.value = true;
+	});
 </script>
 
 <style scoped lang="scss">
-	.expert-card {
+	.expert-mini-card {
+		cursor: pointer;
+
+		display: flex;
+		grid-gap: 8px;
+		flex-direction: column;
+		justify-content: flex-start;
+
 		width: 300px;
 		max-width: 300px;
 		height: 400px;
@@ -31,16 +45,43 @@
 		padding: 24px 34px;
 		border-radius: 14px;
 
+		color: var(--color-grey-dd);
+		text-decoration: none;
+
 		background-color: var(--color-grey-ll);
-		box-shadow: var(--box-shadow-super);
+		box-shadow: var(--box-shadow-normal);
+
+		transition: box-shadow 0.2s ease-in-out;
 
 		&__photo {
+			overflow: hidden;
 			width: 100%;
-			height: 100%;
+			height: 70%;
+			border-radius: 14px;
 
-			// background-image: var(--photo);
+			img {
+				display: block; /* убирает пробелы под img */
 
-			// background-image: url('assets/imgs/experts/Expert-Nazar.png');
+				width: 100%;
+				height: 100%;
+
+				object-fit: cover; /* заполняет контейнер, с обрезанием */
+				object-position: center; /* центрирует изображение */
+			}
+		}
+
+		&__name {
+			width: 100%;
+			height: max-content;
+		}
+
+		&__description {
+			width: 100%;
+			height: max-content;
+		}
+
+		&:hover {
+			box-shadow: var(--box-shadow-up);
 		}
 	}
 </style>

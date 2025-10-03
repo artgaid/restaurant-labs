@@ -1,3 +1,24 @@
+<template>
+	<div class="reviews">
+		<div class="text-block-title">Что говорят о сотрудничестве с нами</div>
+		<div class="reviews__tags">
+			<div v-for="(tag, indx) in reviewTags" :key="indx" class="one-tag">
+				{{ tag.label }}
+			</div>
+		</div>
+		<div class="reviews__content">
+			<OneReviewCard
+				v-for="(review, index) in reviewList"
+				:key="index"
+				:city="review.city"
+				:full-name="review.fullName"
+				:description="review.description"
+				:comment="review.comment"
+			/>
+		</div>
+	</div>
+</template>
+
 <script setup lang="ts">
 	import OneReviewCard from '~/components/common/OneReviewCard.vue';
 
@@ -63,66 +84,46 @@
 	];
 </script>
 
-<template>
-	<div class="reviews">
-		<div class="text-block-title">Что говорят о сотрудничестве с нами</div>
-		<div class="reviews__tags">
-			<div v-for="(tag, indx) in reviewTags" :key="indx" class="one-tag">
-				{{ tag.label }}
-			</div>
-		</div>
-		<div class="reviews__content">
-			<OneReviewCard
-				v-for="(review, index) in reviewList"
-				:key="index"
-				:city="review.city"
-				:full-name="review.fullName"
-				:description="review.description"
-				:comment="review.comment"
-			/>
-		</div>
-	</div>
-</template>
-
 <style scoped lang="scss">
 	.reviews {
+		display: flex;
+		grid-gap: 12px;
+		flex-direction: column;
+
 		width: 100%;
 		height: auto;
-		display: flex;
-		flex-direction: column;
-		grid-gap: 12px;
 
 		&__tags {
+			display: flex;
+			grid-gap: 10px;
 			width: 100%;
 			height: auto;
 
-			display: flex;
-			grid-gap: 10px;
-
 			.one-tag {
+				display: flex;
+				align-content: center;
+				justify-content: center;
+
 				width: max-content;
 				height: max-content;
 				padding: 10px 14px;
-
-				display: flex;
-				justify-content: center;
-				align-content: center;
-
 				border-radius: 40px;
+
 				background-color: var(--color-grey-l);
 			}
 		}
 
 		&__content {
-			width: 100%;
+			overflow-x: auto; /* горизонтальный скролл */
+			overflow-y: hidden;
 			display: flex;
 			flex-wrap: nowrap; /* элементы в одну строку */
 			gap: 14px; /* вместо grid-gap */
-			overflow-x: auto; /* горизонтальный скролл */
-			overflow-y: hidden;
-			-webkit-overflow-scrolling: touch; /* плавный скролл на iOS */
 
+			width: 100%;
 			padding: 12px 0;
+
+			-webkit-overflow-scrolling: touch; /* плавный скролл на iOS */
 		}
 	}
 </style>
