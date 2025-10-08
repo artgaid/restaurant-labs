@@ -32,10 +32,10 @@
 		padding-right: 26px;
 		border-radius: 14px;
 
-		background-color: var(--color-grey-d);
+		background-color: var(--color-grey-111);
 
 		&.selected {
-			color: var(--color-grey-dd);
+			color: var(--color-grey-53);
 			background: var(--gradient-green-1);
 		}
 
@@ -60,7 +60,7 @@
 			padding: 10px;
 			border-radius: 50%;
 
-			background-color: var(--color-grey-dd);
+			background-color: var(--color-grey-53);
 
 			svg {
 				width: 18px;

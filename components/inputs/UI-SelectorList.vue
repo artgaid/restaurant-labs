@@ -33,7 +33,7 @@
 		padding: 6px;
 		border-radius: 14px;
 
-		background-color: var(--color-grey-l);
+		background-color: var(--color-grey-225);
 
 		.ui-selector-item {
 			cursor: pointer;
@@ -50,8 +50,8 @@
 			font: var(--font-body-default);
 
 			&:hover {
-				color: var(--color-green-ll);
-				background-color: var(--color-grey-d);
+				color: var(--color-green-137);
+				background-color: var(--color-grey-111);
 			}
 		}
 	}

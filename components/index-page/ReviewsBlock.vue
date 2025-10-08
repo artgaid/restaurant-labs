@@ -109,7 +109,7 @@
 				padding: 10px 14px;
 				border-radius: 40px;
 
-				background-color: var(--color-grey-l);
+				background-color: var(--color-grey-225);
 			}
 		}
 

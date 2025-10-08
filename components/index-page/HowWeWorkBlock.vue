@@ -43,7 +43,7 @@
 
 			color: var(--color-white);
 
-			background-color: var(--color-grey-dd);
+			background-color: var(--color-grey-53);
 		}
 
 		&__content {

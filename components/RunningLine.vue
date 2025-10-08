@@ -17,8 +17,8 @@
 		padding: 4px 2px;
 
 		font: var(--font-body-default-bold);
-		color: var(--color-green-ll);
+		color: var(--color-green-137);
 
-		background-color: var(--color-grey-dd);
+		background-color: var(--color-grey-53);
 	}
 </style>

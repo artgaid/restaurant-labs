@@ -28,11 +28,11 @@
 
 	const btnBgColor = computed(() => {
 		if (props.color === 'green') {
-			return `var(--color-green-ll)`;
+			return `var(--color-green-137)`;
 		} else if (props.color === 'white') {
 			return `var(--color-white)`;
 		}
-		return `var(--color-grey-dd)`;
+		return `var(--color-grey-53)`;
 	});
 
 	const btnBgColorHover = computed(() => {
@@ -41,22 +41,22 @@
 		} else if (props.color === 'white') {
 			return `var(--color-white)`;
 		}
-		return `var(--color-grey-d)`;
+		return `var(--color-grey-111)`;
 	});
 
-	const btnBgColorDisabled = computed(() => `var(--color-grey-l)`);
+	const btnBgColorDisabled = computed(() => `var(--color-grey-225)`);
 	const btnBgColorActive = computed(() => {
 		if (props.color === 'green') {
-			return `var(--color-grey-dd)`;
+			return `var(--color-grey-53)`;
 		} else if (props.color === 'white') {
 			return `var(--color-white)`;
 		}
-		return `var(--color-grey-dd)`;
+		return `var(--color-grey-53)`;
 	});
 
 	const btnColor = computed(() => {
 		if (props.color === 'green') {
-			return `var(--color-grey-dd)`;
+			return `var(--color-grey-53)`;
 		} else if (props.color === 'white') {
 			return `var(--color-white)`;
 		}
@@ -69,7 +69,7 @@
 		} else if (props.color === 'white') {
 			return `var(--color-white)`;
 		}
-		return `var(--color-grey-dd)`;
+		return `var(--color-grey-53)`;
 	});
 
 	const btnColorDisabled = computed(() => `var(--color-white)`);

@@ -35,7 +35,7 @@
 		height: 100%;
 		min-height: 400px;
 		padding: 14px 22px;
-		border: 2px solid var(--color-grey-l);
+		border: 2px solid var(--color-grey-225);
 		border-radius: 14px;
 
 		&__photo {

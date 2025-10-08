@@ -143,7 +143,7 @@
 		padding: 22px 18px 18px;
 		border-radius: 14px;
 
-		background-color: var(--color-grey-l);
+		background-color: var(--color-grey-225);
 
 		transition: box-shadow 0.2s ease;
 
@@ -208,7 +208,7 @@
 		}
 
 		&.bg-grey-dd {
-			background-color: var(--color-grey-dd);
+			background-color: var(--color-grey-53);
 		}
 
 		&.bg-radian-gradient-1 {

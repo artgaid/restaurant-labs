@@ -88,7 +88,7 @@
 
 				font: var(--font-body-default-medium);
 
-				background-color: var(--color-grey-l);
+				background-color: var(--color-grey-225);
 				box-shadow: var(--box-shadow-super);
 			}
 		}

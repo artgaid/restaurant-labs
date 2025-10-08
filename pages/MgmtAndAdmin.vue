@@ -201,7 +201,7 @@
 
 			&__text-1 {
 				padding: 0 40px;
-				color: var(--color-grey-d);
+				color: var(--color-grey-111);
 			}
 
 			&__text-2 {
@@ -214,9 +214,9 @@
 				padding: 20px 40px;
 				border-radius: 14px;
 
-				color: var(--color-grey-d);
+				color: var(--color-grey-111);
 
-				background-color: var(--color-grey-ll);
+				background-color: var(--color-grey-240);
 				box-shadow: var(--box-shadow-up);
 			}
 
@@ -245,7 +245,7 @@
 			padding: 40px 60px;
 			border-radius: 14px;
 
-			background-color: var(--color-grey-lll);
+			background-color: var(--color-grey-248);
 		}
 
 		.experts-wrapper {

@@ -45,10 +45,10 @@
 		padding: 24px 34px;
 		border-radius: 14px;
 
-		color: var(--color-grey-dd);
+		color: var(--color-grey-53);
 		text-decoration: none;
 
-		background-color: var(--color-grey-ll);
+		background-color: var(--color-grey-240);
 		box-shadow: var(--box-shadow-normal);
 
 		transition: box-shadow 0.2s ease-in-out;

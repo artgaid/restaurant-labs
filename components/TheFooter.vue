@@ -63,7 +63,7 @@
 
 		color: var(--color-white);
 
-		background-color: var(--color-grey-dd);
+		background-color: var(--color-grey-53);
 
 		&__wrapper {
 			display: grid;
@@ -135,7 +135,7 @@
 				span:first-child {
 					padding: 6px 0;
 					font: var(--font-body-default-semibold);
-					box-shadow: inset 0 -2px 0 0 var(--color-green-lll);
+					box-shadow: inset 0 -2px 0 0 var(--color-green-161);
 				}
 			}
 
@@ -182,7 +182,7 @@
 
 				&:hover {
 					svg {
-						fill: var(--color-green-lll);
+						fill: var(--color-green-161);
 					}
 				}
 			}

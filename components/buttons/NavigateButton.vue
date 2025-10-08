@@ -28,15 +28,15 @@
 
 		&.grey {
 			&:hover {
-				background-color: var(--color-grey-l);
+				background-color: var(--color-grey-225);
 			}
 		}
 
 		&.green {
-			border-color: var(--color-green-ll);
+			border-color: var(--color-green-137);
 
 			&:hover {
-				background-color: var(--color-green-ll);
+				background-color: var(--color-green-137);
 			}
 		}
 
@@ -44,7 +44,7 @@
 			color: var(--color-white);
 
 			&:hover {
-				background-color: var(--color-grey-d);
+				background-color: var(--color-grey-111);
 			}
 		}
 	}

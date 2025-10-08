@@ -141,7 +141,7 @@
 					font-size: 46px;
 					font-weight: 700;
 					line-height: 50px;
-					color: var(--color-green-ll);
+					color: var(--color-green-137);
 				}
 
 				&__description {

@@ -52,7 +52,7 @@
 			width: 100%;
 			margin-bottom: 22px;
 			font: var(--font-body-default-medium);
-			color: var(--color-grey-d);
+			color: var(--color-grey-111);
 		}
 
 		&__block-wrapper {
@@ -90,23 +90,23 @@
 
 			.span-2 {
 				font: var(--font-small-caption);
-				color: var(--color-grey-dd);
+				color: var(--color-grey-53);
 			}
 
 			&.color-black {
-				background-color: var(--color-grey-dd);
+				background-color: var(--color-grey-53);
 
 				.span-1 {
 					color: var(--color-white);
 				}
 
 				.span-2 {
-					color: var(--color-grey-ll);
+					color: var(--color-grey-240);
 				}
 			}
 
 			&.color-grey {
-				background-color: var(--color-grey-l);
+				background-color: var(--color-grey-225);
 			}
 		}
 	}

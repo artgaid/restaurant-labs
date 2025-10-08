@@ -30,34 +30,34 @@
 
 	const btnBgColor = computed(() => {
 		if (props.color === 'green') {
-			return `var(--color-green-ll)`;
+			return `var(--color-green-137)`;
 		} else if (props.color === 'white') {
 			return `var(--color-white)`;
 		}
-		return `var(--color-grey-dd)`;
+		return `var(--color-grey-53)`;
 	});
 
 	const btnBgColorHover = computed(() => {
 		if (props.color === 'green') {
 			return `var(--color-white)`;
 		} else if (props.color === 'white') {
-			return `var(--color-green-ll)`;
+			return `var(--color-green-137)`;
 		}
-		return `var(--color-green-ll)`;
+		return `var(--color-green-137)`;
 	});
 
 	const btnTextColor = computed(() => {
 		if (props.color === 'green') {
-			return `var(--color-grey-dd)`;
+			return `var(--color-grey-53)`;
 		} else if (props.color === 'white') {
-			return `var(--color-grey-dd)`;
+			return `var(--color-grey-53)`;
 		}
 		return `var(--color-white)`;
 	});
 
 	const btnIconBgColorHover = computed(() => {
 		if (props.color === 'green') {
-			return `var(--color-green-ll)`;
+			return `var(--color-green-137)`;
 		} else if (props.color === 'white') {
 			return `var(--color-white)`;
 		}
@@ -103,7 +103,7 @@
 		}
 
 		&:hover {
-			color: var(--color-grey-dd);
+			color: var(--color-grey-53);
 
 			&::after {
 				width: 100%;

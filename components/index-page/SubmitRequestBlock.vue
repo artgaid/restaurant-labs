@@ -22,7 +22,7 @@
 		padding: 40px 60px;
 		border-radius: 14px;
 
-		background-color: var(--color-grey-ll);
+		background-color: var(--color-grey-240);
 		box-shadow: var(--box-shadow-super);
 
 		&__description {

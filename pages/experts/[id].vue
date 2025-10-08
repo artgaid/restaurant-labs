@@ -45,7 +45,14 @@
 
 <style scoped lang="scss">
 	.expert-card {
+		display: flex;
+		grid-gap: 14px;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+
 		width: 100%;
+		height: auto;
 		padding: 22px 2%;
 
 		&__main {
@@ -56,7 +63,7 @@
 			padding: 34px 30px;
 			border-radius: 10px;
 
-			background-color: var(--color-grey-ll);
+			background-color: var(--color-grey-240);
 
 			.main-photo {
 				overflow: hidden;
@@ -77,7 +84,7 @@
 
 			.main-content {
 				display: flex;
-				grid-gap: 20px;
+				grid-gap: 14px;
 				flex-direction: column;
 
 				width: 100%;
@@ -88,7 +95,19 @@
 				}
 
 				.location {
-					color: var(--color-grey-d);
+					font: var(--font-body-default-medium);
+					color: var(--color-grey-145);
+				}
+
+				.role {
+					font: var(--font-body-default-medium);
+				}
+
+				.tagline {
+					font-size: 16px;
+					font-style: oblique;
+					line-height: 18px;
+					color: var(--color-black);
 				}
 			}
 		}

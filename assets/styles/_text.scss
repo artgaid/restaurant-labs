@@ -15,7 +15,7 @@
 
 body {
 	font: var(--font-body-default);
-	color: var(--color-grey-dd);
+	color: var(--color-grey-53);
 	text-rendering: optimizelegibility;
 
 	/* letter-spacing is fixed for all the text styles */
@@ -78,7 +78,7 @@ input {
 		width: 100%;
 		margin-bottom: 22px;
 		font: var(--font-body-default-medium);
-		color: var(--color-grey-d);
+		color: var(--color-grey-111);
 	}
 
 	&-default {
@@ -121,11 +121,11 @@ input {
 	}
 
 	&-black {
-		color: var(--color-grey-dd);
+		color: var(--color-grey-53);
 	}
 
 	&-green {
-		color: var(--color-green-ll);
+		color: var(--color-green-137);
 	}
 
 	&-white {
@@ -176,6 +176,6 @@ input {
 	color: var(--color-green);
 
 	:hover {
-		color: var(--color-green-l);
+		color: var(--color-green-149);
 	}
 }
