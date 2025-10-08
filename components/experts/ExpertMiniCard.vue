@@ -1,7 +1,7 @@
 <template>
 	<NuxtLink :to="pageUrl" class="expert-mini-card">
 		<div class="expert-mini-card__photo">
-			<img v-if="imgSrc && isMounted" :src="imgSrc" alt="photo" />
+			<img v-if="mainPhotoUrl" :src="mainPhotoUrl" alt="photo" />
 		</div>
 
 		<div class="expert-mini-card__name text-bold">{{ props.expert.name }}</div>
@@ -12,21 +12,31 @@
 </template>
 
 <script setup lang="ts">
-	import getImgSrcHelper from '~/helpers/getImgSrc.helper';
 	import type { ExpertType } from '~/types/ExpertsTypes';
 
 	const props = defineProps<{
 		expert: ExpertType;
 	}>();
 
+	const expertName = computed(() => props.expert.photoDir);
+	const expertKey = computed(() =>
+		props.expert.photoDir ? `expert-photos-${props.expert.photoDir}` : '',
+	);
+
+	const { data } = await useAsyncData<{ main: string | null; projects: string[] }>(
+		expertKey,
+		() =>
+			$fetch('/api/expert-photos', {
+				params: { expertName: expertName.value },
+			}),
+		{
+			watch: [expertName],
+		},
+	);
+
+	const mainPhotoUrl = computed<string | null>(() => data.value?.main ?? null);
+
 	const pageUrl = computed(() => `/experts/${props.expert.id}`);
-
-	const imgSrc = computed(() => getImgSrcHelper(props.expert.photo, 'experts') ?? null);
-
-	const isMounted = ref(false);
-	onMounted(() => {
-		isMounted.value = true;
-	});
 </script>
 
 <style scoped lang="scss">

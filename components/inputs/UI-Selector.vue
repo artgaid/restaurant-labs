@@ -287,8 +287,7 @@
 
 			width: 100%;
 			height: 100%;
-			border: 1.5px solid;
-			border-color: var(--input-text-and-search-and-date-time-border-default);
+			border: 1.5px solid var(--color-grey-53);
 			border-radius: var(--br-14);
 		}
 
