@@ -75,7 +75,7 @@
 			padding: 18px 10px 10px;
 			border-radius: 14px;
 
-			box-shadow: var(--box-shadow-up);
+			box-shadow: var(--box-shadow-super);
 
 			&__btn {
 				width: 100%;

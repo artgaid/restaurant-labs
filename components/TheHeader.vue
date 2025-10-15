@@ -39,7 +39,7 @@
 		},
 		{
 			name: 'Разработка блюд и напитков',
-			url: '/',
+			url: '/InventingDishesAndDrinks',
 		},
 		{
 			name: 'Обучение сотрудников',

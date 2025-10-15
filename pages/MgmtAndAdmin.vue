@@ -1,59 +1,14 @@
 <template>
 	<div class="mgmt-admin-page">
 		<BackButton />
-		<div class="main-block">
-			<div class="text-block-title">Менеджмент и управление</div>
-			<div class="main-block__wrapper">
-				<div class="main-block__content">
-					<div class="main-block__text-1">
-						Операционное управление, выручка, команда — без этого не работает ни один ресторан.
-						<br />
-						Менеджмент — это не про «быть на месте», а про выстроенные процессы,
-						<br />
-						чёткие показатели и уверенность в завтрашнем дне.
-						<br />
-						<br />
-						На платформе собраны эксперты с реальным опытом управления — от известных ресторанов до
-						федеральных сетей.
-					</div>
 
-					<div class="main-block__text-2">
-						<span>
-							<span class="text-black">Форматы взаимодействия:</span>
-							<br />
-							— очные и онлайн-сессии
-							<br />
-							— стратегические сессии и аудит текущей системы
-							<br />
-							— точечная консультация или долгосрочное сопровождение
-						</span>
-
-						<span>
-							<span class="text-black">Подбираем специалистов под задачи:</span>
-							<br />
-							— внедрение системы управления
-							<br />
-							— антикризис и перезапуск
-							<br />
-							— рост финансовой эффективности
-							<br />
-							— построение команды и корпоративной культуры
-							<br />
-							— масштабирование и делегирование
-						</span>
-
-						<span class="text-black">
-							Выбирайте нужного эксперта и стройте ресторан, в котором управлять — значит не тушить
-							пожары, а развивать бизнес.
-						</span>
-					</div>
-				</div>
-
-				<div class="main-block__img">
-					<UIAnimatedButton :color="'white'">Выбрать формат обучения</UIAnimatedButton>
-				</div>
-			</div>
-		</div>
+		<MainServiceBlock
+			:label="'Менеджмент и управление'"
+			:description="serviceDescription"
+			:grey-description="serviceGreyDescription"
+			:img-url="'images/MgmtAndAdmin-img1.jpg'"
+			:button-text="'Выбрать формат обучения'"
+		/>
 
 		<div class="our-services-wrapper">
 			<OurServicesBlock
@@ -71,9 +26,30 @@
 
 <script setup lang="ts">
 	import BackButton from '~/components/buttons/BackButton.vue';
-	import UIAnimatedButton from '~/components/buttons/UI-AnimatedButton.vue';
 	import { MGMT_AND_ADMIN_EXPERTS } from '~/constants/mgmt-and-admin';
 	import type { ServiceDataType } from '~/types/OurServicesType';
+
+	const serviceDescription =
+		'Операционное управление, выручка, команда — без этого не работает ни один ресторан.\n' +
+		'Менеджмент — это не про «быть на месте», а про выстроенные процессы,\n' +
+		'чёткие показатели и уверенность в завтрашнем дне.\n\n' +
+		'На платформе собраны эксперты с реальным опытом управления — от известных ресторанов до\n' +
+		'федеральных сетей.';
+
+	const serviceGreyDescription =
+		'Форматы взаимодействия:\n' +
+		'— очные и онлайн-сессии\n' +
+		'— стратегические сессии и аудит текущей системы\n' +
+		'— точечная консультация или долгосрочное сопровождение\n' +
+		'\n' +
+		'Подбираем специалистов под задачи:\n' +
+		'— внедрение системы управления\n' +
+		'— антикризис и перезапуск\n' +
+		'— рост финансовой эффективности\n' +
+		'— построение команды и корпоративной культуры\n' +
+		'— масштабирование и делегирование\n' +
+		'\n' +
+		'Выбирайте нужного эксперта и стройте ресторан, в котором управлять — значит не тушить пожары, а развивать бизнес.';
 
 	const ourServicesList: ServiceDataType[] = [
 		{
@@ -230,7 +206,7 @@
 				padding: 20px;
 				border-radius: 14px;
 
-				background-image: url('assets/imgs/MgmtAndAdmin-img1.jpg');
+				background-image: url('public/images/MgmtAndAdmin-img1.jpg');
 				background-repeat: no-repeat;
 				background-position: top;
 				background-size: cover;
